@@ -1,0 +1,405 @@
+@font-face{
+    src: url("../fonts/IBMPlexSans-Bold.ttf");
+    font-family: "IBM-B";
+}
+
+@font-face{
+    src: url("../fonts/Lato-Black.ttf");
+    font-family: "Lato-B";
+}
+
+@font-face{
+    src: url("../fonts/IBMPlexSans-Regular.ttf");
+    font-family: "IBM-R";
+}
+
+@font-face{
+    src: url("../fonts/IBMPlexSans-Medium.ttf");
+    font-family: "IBM-M";
+}
+
+@font-face{
+    src: url("../fonts/IBMPlexSans-Light.ttf");
+    font-family: "IBM-L";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --cinza-1d: #1d1d1d;
+    --cinza-70: #707070;
+    --cinza-4d: #4d4d4d;
+    --dourado-b4: #B47D33;
+    --dourado-b1: #B17E3B;
+    --dourado-a9: #A97339;
+    --branco: #FFFFFF;
+    --preto: #000;
+}
+
+.t1{
+    font-family: "IBM-R";
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--cinza-4d);
+}
+
+.p{
+    font-family: "IBM-R";
+    font-weight: light;
+    font-size: 13px;
+    color: var(--cinza-4d);
+}
+
+.sub-titulo{
+    font-family: "Lato-B";
+    font-size: 18px;
+    color: var(--dourado-b4);
+    text-transform: uppercase;
+}
+
+body{
+    max-width: 1280px;
+    min-width: 360px;
+}
+
+/* TITULO */
+.titulo h1{
+    padding: 0px 15px;
+    margin-top: 52px;
+    font-family: "IBM-B";
+    color: var(--cinza-4d);
+    font-size: 35px;
+}
+
+/* HR */
+.headerhr{
+    height: 2px;
+    margin: 10px 0px 10px 0px;
+    color: black !important;
+    border: black !important;
+    background-color: black !important;
+}
+
+#container-sup{
+    z-index: 20;
+    position: absolute;
+    max-width: 1280px;
+    min-width: 360px;
+}
+
+/* NAVBAR HEADER */
+.nav-link{
+    font-family: "Lato-B";
+    font-size: 18px;
+    color: var(--cinza-4d);
+}
+
+.nav-link:hover{
+    color: var(--dourado-b4);
+}
+
+.active-nav{
+    color: var(--dourado-b4);
+}
+
+.dropdown-menu{
+    border: none;
+    box-shadow: 0px 0px 20px 3px rgba(29, 29, 29, 0.187);
+    border-radius: 0px;
+    padding: 18px 30px 28px 30px;
+}
+
+.dropdown-item{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: "IBM-R";
+    font-weight: bolder;
+    font-size: 13px;
+    color: var(--cinza-4d);
+}
+
+.dropdown-item:hover, .dropdown-item:active{
+    color: var(--dourado-b1);
+    background-color: var(--branco);
+}
+
+/* CARROSSEL 1 */
+.carousel-indicators{
+    margin-bottom: 8%;
+}
+
+.carousel-indicators button{
+    background-image: url("../img/bolabanner1.svg");
+    background-position: center;
+    background-size: cover;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background-color: transparent !important;
+}
+
+.carousel-indicators button.active, .carousel-indicators button:hover{
+    background-image: url("../img/bolabanner2.svg");
+}
+
+.carousel-inner h1{
+    font-family: "IBM-L";
+    color: var(--cinza-4d);
+    font-size: 40px;
+}
+
+.carousel-inner h5{
+    font-family: "IBM-R";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--dourado-b1);
+    font-size: 15px;
+}
+
+.botao_saber{
+    width: 120px;
+    height: 30px;
+    border-radius: 0px;
+    border: none;
+    background-image: url("../img/sabermais1.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.botao_saber:hover{
+    background-image: url("../img/sabermais2.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.botao_ver_mais{
+    width: 90px;
+    height: 26px;
+    border-radius: 0px;
+    border: none;
+    background-image: url("../img/vermais.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.botao_ver_mais:hover{
+    background-image: url("../img/vermais-cinza.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.link_botao{
+    text-decoration: none;
+}
+
+.carousel-inner p{
+    font-family: "IBM-L";
+    color: var(--cinza-4d);
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.carousel-caption{
+    height: fit-content;
+    bottom: 210px;
+    width: 40%;
+}
+
+.carousel-caption h1{
+    width: 85%;
+}
+
+@media all and (max-width: 1130px){
+    .titulo h1{
+        margin-top: 42px;
+        font-size: 28px;
+    }
+
+    .nav-link{
+        font-size: 14px;
+    }
+    
+    .carousel-caption{
+        bottom: 90px;
+    }
+
+    .carousel-indicators{
+        bottom: -25px;
+    }
+
+    .carousel-inner h1{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 882px){
+    .titulo h1{
+        margin-top: 42px;
+        font-size: 28px;
+    }
+
+    .nav-link{
+        font-size: 14px;
+    }
+
+    .carousel-caption{
+        bottom: 80px;
+    }
+
+    .carousel-indicators{
+        bottom: -18px;
+    }
+
+    .carousel-inner h1{
+        font-size: 16px;
+    }
+
+    .carousel-inner h5{
+        font-size: 10px;
+    }
+
+    .carousel-inner p{
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .titulo h1{
+        font-size: 26px;
+    }
+
+    .navbar .navbar-nav{
+        border: none;
+        background-color: var(--branco);
+        box-shadow: 0px 0px 20px 3px rgba(29, 29, 29, 0.187);
+        border-radius: 0px;
+        padding: 18px 30px 28px 30px;
+    }
+
+    .carousel-caption{
+        width: 70%;
+        bottom: 14%;
+    }
+
+    .carousel-indicators{
+        bottom: 25px;
+    }
+
+    .carousel-inner h1{
+        font-size: 25px;
+        width: fit-content;
+    }
+
+    .carousel-inner h5{
+        font-size: 15px;
+    }
+
+    .carousel-inner p{
+        font-size: 12px;
+    }
+}
+
+
+/* AREA AUTOR */
+.caixa-branca{
+    position: relative;
+    top: -50px;
+    z-index: 10;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.texto-autor{
+    text-align: justify;
+}
+
+/* AREA INFO AUTOR */
+.texto-ultimos{
+    text-align: justify;
+}
+
+.foto-autor{
+    max-width: 510px;
+    max-height: 345px;
+}
+
+.botao_voltar{
+    width: 120px;
+    height: 30px;
+    border-radius: 0px;
+    border: none;
+    background-image: url("../img/voltar1.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.botao_voltar:hover{
+    background-image: url("../img/voltar2.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* RODAPE */
+/* NAVBAR*/
+footer nav{
+    border-top: 2px solid rgb(180, 180, 180);
+    border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+footer nav a{
+    font-size: 16px;
+}
+
+/* CONTACTOS E REDES SOCIAIS */
+.contactos .t1{
+    font-size: 20px;
+}
+
+.titulo-contacto{
+    font-family: "IBM-R";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--dourado-b1);
+    font-size: 15px;
+}
+
+.icone{
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.instagram{
+    background-image: url("../img/instagram1.svg");
+}
+
+.instagram:hover{
+    background-image: url("../img/instagram2.svg");
+}
+
+.facebook{
+    background-image: url("../img/facebook1.svg");
+}
+
+.facebook:hover{
+    background-image: url("../img/facebook2.svg");
+}
+
+.linkedin{
+    background-image: url("../img/linkedin1.svg");
+}
+
+.linkedin:hover{
+    background-image: url("../img/linkedin2.svg");
+}
+
+/* LIVRO RECLAMACOES & COOKIES */
+.cookies{
+    padding-left: 9%;
+}
